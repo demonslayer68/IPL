@@ -1,0 +1,239 @@
+,Name,ShortName,TeamName,TeamShortName,SkillName,IS_FP,Value
+0,Rohit Sharma,Rohit Sharma,Mumbai Indians,MI,BATSMAN,0,11
+1,KL Rahul,KL Rahul,Lucknow Super Giants,LSG,BATSMAN,0,11
+2,Virat Kohli,Virat Kohli,Royal Challengers Bangalore,RCB,BATSMAN,0,11
+3,Jos Buttler,Jos Buttler,Rajasthan Royals,RR,WICKET KEEPER,1,11
+4,Hardik Pandya,Hardik Pandya,Gujarat Titans,GT,ALL ROUNDER,0,11
+5,Andre Russell,Andre Russell,Kolkata Knight Riders,KKR,ALL ROUNDER,1,10.5
+6,Rashid Khan,Rashid Khan,Gujarat Titans,GT,ALL ROUNDER,1,10.5
+7,Glenn Maxwell,Glenn Maxwell,Royal Challengers Bangalore,RCB,ALL ROUNDER,1,10
+8,Wanindu Hasaranga,Wanindu Hasaranga,Royal Challengers Bangalore,RCB,ALL ROUNDER,1,10
+9,David Warner,David Warner,Delhi Capitals,DC,BATSMAN,1,10
+10,Sanju Samson,Sanju Samson,Rajasthan Royals,RR,WICKET KEEPER,0,10
+11,Quinton de Kock,Quinton de Kock,Lucknow Super Giants,LSG,WICKET KEEPER,1,10
+12,Ben Stokes,Ben Stokes,Chennai Super Kings,CSK,ALL ROUNDER,1,10
+13,Ravindra Jadeja,Ravindra Jadeja,Chennai Super Kings,CSK,ALL ROUNDER,0,10
+14,Suryakumar Yadav,Suryakumar Yadav,Mumbai Indians,MI,BATSMAN,0,10
+15,Marcus Stoinis,Marcus Stoinis,Lucknow Super Giants,LSG,ALL ROUNDER,1,9.5
+16,Jonny Bairstow,Jonny Bairstow,Punjab Kings,PBKS,BATSMAN,1,9.5
+17,Shreyas Iyer,Shreyas Iyer,Kolkata Knight Riders,KKR,BATSMAN,0,9.5
+18,Moeen Ali,Moeen Ali,Chennai Super Kings,CSK,ALL ROUNDER,1,9.5
+19,Shikhar Dhawan,Shikhar Dhawan,Punjab Kings,PBKS,BATSMAN,0,9.5
+20,Kagiso Rabada,Kagiso Rabada,Punjab Kings,PBKS,BOWLER,1,9.5
+21,Mitchell Marsh,Mitchell Marsh,Delhi Capitals,DC,ALL ROUNDER,1,9.5
+22,Sam Curran,Sam Curran,Punjab Kings,PBKS,ALL ROUNDER,1,9.5
+23,Jofra Archer,Jofra Archer,Mumbai Indians,MI,BOWLER,1,9.5
+24,Faf du Plessis,Faf du Plessis,Royal Challengers Bangalore,RCB,BATSMAN,1,9.5
+25,Yuzvendra Chahal,Yuzvendra Chahal,Rajasthan Royals,RR,BOWLER,0,9.5
+26,Ruturaj Gaikwad,Ruturaj Gaikwad,Chennai Super Kings,CSK,BATSMAN,0,9.5
+27,Shubman Gill,Shubman Gill,Gujarat Titans,GT,BATSMAN,0,9.5
+28,Krunal Pandya,Krunal Pandya,Lucknow Super Giants,LSG,ALL ROUNDER,0,9
+29,Ravichandran Ashwin,Ravichandran Ashwin,Rajasthan Royals,RR,ALL ROUNDER,0,9
+30,Washington Sundar,Washington Sundar,Sunrisers Hyderabad,SRH,ALL ROUNDER,0,9
+31,Sunil Narine,Sunil Narine,Kolkata Knight Riders,KKR,ALL ROUNDER,1,9
+32,Cameron Green,Cameron Green,Mumbai Indians,MI,ALL ROUNDER,1,9
+33,Nicholas Pooran,Nicholas Pooran,Lucknow Super Giants,LSG,WICKET KEEPER,1,9
+34,Josh Hazlewood,Josh Hazlewood,Royal Challengers Bangalore,RCB,BOWLER,1,9
+35,Anrich Nortje,Anrich Nortje,Delhi Capitals,DC,BOWLER,1,9
+36,Mayank Agarwal,Mayank Agarwal,Sunrisers Hyderabad,SRH,BATSMAN,0,9
+37,Liam Livingstone,Liam Livingstone,Punjab Kings,PBKS,ALL ROUNDER,1,9
+38,Trent Boult,Trent Boult,Rajasthan Royals,RR,BOWLER,1,9
+39,Rahul Tripathi,Rahul Tripathi,Sunrisers Hyderabad,SRH,BATSMAN,0,9
+40,Axar Patel,Axar Patel,Delhi Capitals,DC,ALL ROUNDER,0,9
+41,Aiden Markram,Aiden Markram,Sunrisers Hyderabad,SRH,BATSMAN,1,9
+42,Kane Williamson,Kane Williamson,Gujarat Titans,GT,BATSMAN,1,9
+43,Prithvi Shaw,Prithvi Shaw,Delhi Capitals,DC,BATSMAN,0,9
+44,David Miller,David Miller,Gujarat Titans,GT,BATSMAN,1,9
+45,Kuldeep Yadav,Kuldeep Yadav,Delhi Capitals,DC,BOWLER,0,9
+46,Mohammed Siraj,Mohammed Siraj,Royal Challengers Bangalore,RCB,BOWLER,0,9
+47,Ishan Kishan,Ishan Kishan,Mumbai Indians,MI,WICKET KEEPER,0,9
+48,Umran Malik,Umran Malik,Sunrisers Hyderabad,SRH,BOWLER,0,9
+49,MS Dhoni,MS Dhoni,Chennai Super Kings,CSK,WICKET KEEPER,0,9
+50,Devon Conway,Devon Conway,Chennai Super Kings,CSK,BATSMAN,1,9
+51,Mohammad Shami,Mohammad Shami,Gujarat Titans,GT,BOWLER,0,9
+52,Shimron Hetmyer,Shimron Hetmyer,Rajasthan Royals,RR,BATSMAN,1,8.5
+53,Joe Root,Joe Root,Rajasthan Royals,RR,BATSMAN,1,8.5
+54,Glenn Phillips,Glenn Phillips,Sunrisers Hyderabad,SRH,BATSMAN,1,8.5
+55,Marco Jansen,Marco Jansen,Sunrisers Hyderabad,SRH,BOWLER,1,8.5
+56,Jason Holder,Jason Holder,Rajasthan Royals,RR,ALL ROUNDER,1,8.5
+57,Rovman Powell,Rovman Powell,Delhi Capitals,DC,BATSMAN,1,8.5
+58,Mark Wood,Mark Wood,Lucknow Super Giants,LSG,BOWLER,1,8.5
+59,Tim David,Tim David,Mumbai Indians,MI,BATSMAN,1,8.5
+60,Rilee Rossouw,Rilee Rossouw,Delhi Capitals,DC,BATSMAN,1,8.5
+61,Harry Brook,Harry Brook,Sunrisers Hyderabad,SRH,BATSMAN,1,8.5
+62,Nitish Rana,Nitish Rana,Kolkata Knight Riders,KKR,ALL ROUNDER,0,8.5
+63,Venkatesh Iyer,Venkatesh Iyer,Kolkata Knight Riders,KKR,ALL ROUNDER,0,8.5
+64,Tilak Varma,Tilak Varma,Mumbai Indians,MI,BATSMAN,0,8.5
+65,Shakib Al Hasan,Shakib Al Hasan,Kolkata Knight Riders,KKR,ALL ROUNDER,1,8.5
+66,Yashasvi Jaiswal,Yashasvi Jaiswal,Rajasthan Royals,RR,BATSMAN,0,8.5
+67,Umesh Yadav,Umesh Yadav,Kolkata Knight Riders,KKR,BOWLER,0,8.5
+68,Rahul Chahar,Rahul Chahar,Punjab Kings,PBKS,BOWLER,0,8.5
+69,Deepak Hooda,Deepak Hooda,Lucknow Super Giants,LSG,ALL ROUNDER,0,8.5
+70,Rahul Tewatia,Rahul Tewatia,Gujarat Titans,GT,ALL ROUNDER,0,8.5
+71,Shardul Thakur,Shardul Thakur,Kolkata Knight Riders,KKR,BOWLER,0,8.5
+72,Bhuvneshwar Kumar,Bhuvneshwar Kumar,Sunrisers Hyderabad,SRH,BOWLER,0,8.5
+73,T Natarajan,T Natarajan,Sunrisers Hyderabad,SRH,BOWLER,0,8.5
+74,Ravi Bishnoi,Ravi Bishnoi,Lucknow Super Giants,LSG,BOWLER,0,8.5
+75,Avesh Khan,Avesh Khan,Lucknow Super Giants,LSG,BOWLER,0,8.5
+76,Devdutt Padikkal,Devdutt Padikkal,Rajasthan Royals,RR,BATSMAN,0,8.5
+77,Ambati Rayudu,Ambati Rayudu,Chennai Super Kings,CSK,BATSMAN,0,8.5
+78,Maheesh Theekshana,Maheesh Theekshana,Chennai Super Kings,CSK,BOWLER,1,8.5
+79,Harshal Patel,Harshal Patel,Royal Challengers Bangalore,RCB,BOWLER,0,8.5
+80,Arshdeep Singh,Arshdeep Singh,Punjab Kings,PBKS,BOWLER,0,8.5
+81,Deepak Chahar,Deepak Chahar,Chennai Super Kings,CSK,BOWLER,0,8.5
+82,Bhanuka Rajapaksa,Bhanuka Rajapaksa,Punjab Kings,PBKS,BATSMAN,1,8
+83,Jason Behrendorff,Jason Behrendorff,Mumbai Indians,MI,BOWLER,1,8
+84,Naveen-ul-Haq,Naveen-ul-Haq,Lucknow Super Giants,LSG,BOWLER,1,8
+85,Mustafizur Rahman,Mustafizur Rahman,Delhi Capitals,DC,BOWLER,1,8
+86,Obed McCoy,Obed McCoy,Rajasthan Royals,RR,BOWLER,1,8
+87,Adil Rashid,Adil Rashid,Sunrisers Hyderabad,SRH,BOWLER,1,8
+88,Akeal Hosein,Akeal Hosein,Sunrisers Hyderabad,SRH,BOWLER,1,8
+89,Kyle Mayers,Kyle Mayers,Lucknow Super Giants,LSG,ALL ROUNDER,1,8
+90,Daniel Sams,Daniel Sams,Lucknow Super Giants,LSG,ALL ROUNDER,1,8
+91,Tim Southee,Tim Southee,Kolkata Knight Riders,KKR,BOWLER,1,8
+92,Rahmanullah Gurbaz,Rahmanullah Gurbaz,Kolkata Knight Riders,KKR,WICKET KEEPER,1,8
+93,Sikandar Raza,Sikandar Raza,Punjab Kings,PBKS,ALL ROUNDER,1,8
+94,Jaydev Unadkat,Jaydev Unadkat,Lucknow Super Giants,LSG,BOWLER,0,8
+95,Lockie Ferguson,Lockie Ferguson,Kolkata Knight Riders,KKR,BOWLER,1,8
+96,Riyan Parag,Riyan Parag,Rajasthan Royals,RR,ALL ROUNDER,0,8
+97,Abhishek Sharma,Abhishek Sharma,Sunrisers Hyderabad,SRH,ALL ROUNDER,0,8
+98,Lungi Ngidi,Lungi Ngidi,Delhi Capitals,DC,BOWLER,1,8
+99,Chetan Sakariya,Chetan Sakariya,Delhi Capitals,DC,BOWLER,0,8
+100,Dewald Brevis,Dewald Brevis,Mumbai Indians,MI,BATSMAN,1,8
+101,Khaleel Ahmed,Khaleel Ahmed,Delhi Capitals,DC,BOWLER,0,8
+102,Heinrich Klaasen,Heinrich Klaasen,Sunrisers Hyderabad,SRH,WICKET KEEPER,1,8
+103,Joshua Little,Joshua Little,Gujarat Titans,GT,BOWLER,1,8
+104,Adam Zampa,Adam Zampa,Rajasthan Royals,RR,BOWLER,1,8
+105,Varun Chakaravarthy,Varun Chakaravarthy,Kolkata Knight Riders,KKR,BOWLER,0,8
+106,Manish Pandey,Manish Pandey,Delhi Capitals,DC,BATSMAN,0,8
+107,Mohsin Khan,Mohsin Khan,Lucknow Super Giants,LSG,BOWLER,0,8
+108,Ajinkya Rahane,Ajinkya Rahane,Chennai Super Kings,CSK,BATSMAN,0,8
+109,Srikar Bharat,Srikar Bharat,Gujarat Titans,GT,WICKET KEEPER,0,8
+110,Alzarri Joseph,Alzarri Joseph,Gujarat Titans,GT,BOWLER,1,8
+111,Dinesh Karthik,Dinesh Karthik,Royal Challengers Bangalore,RCB,WICKET KEEPER,0,8
+112,Rajat Patidar,Rajat Patidar,Royal Challengers Bangalore,RCB,BATSMAN,0,8
+113,Wriddhiman Saha,Wriddhiman Saha,Gujarat Titans,GT,WICKET KEEPER,0,8
+114,Matthew Wade,Matthew Wade,Gujarat Titans,GT,WICKET KEEPER,1,8
+115,Shivam Mavi,Shivam Mavi,Gujarat Titans,GT,BOWLER,0,8
+116,Romario Shepherd,Romario Shepherd,Lucknow Super Giants,LSG,ALL ROUNDER,1,7.5
+117,Krishnappa Gowtham,Krishnappa Gowtham,Lucknow Super Giants,LSG,ALL ROUNDER,0,7.5
+118,Tristan Stubbs,Tristan Stubbs,Mumbai Indians,MI,BATSMAN,1,7.5
+119,Kumar Kartikeya,Kumar Kartikeya,Mumbai Indians,MI,BOWLER,0,7.5
+120,Ishant Sharma,Ishant Sharma,Delhi Capitals,DC,BOWLER,0,7.5
+121,Amit Mishra,Amit Mishra,Lucknow Super Giants,LSG,BOWLER,0,7.5
+122,David Willey,David Willey,Royal Challengers Bangalore,RCB,BOWLER,1,7.5
+123,Fazalhaq Farooqi,Fazalhaq Farooqi,Sunrisers Hyderabad,SRH,BOWLER,1,7.5
+124,Lalit Yadav,Lalit Yadav,Delhi Capitals,DC,ALL ROUNDER,0,7.5
+125,Murugan Ashwin,Murugan Ashwin,Rajasthan Royals,RR,BOWLER,0,7.5
+126,David Wiese,David Wiese,Kolkata Knight Riders,KKR,ALL ROUNDER,1,7.5
+127,Jayant Yadav,Jayant Yadav,Gujarat Titans,GT,BOWLER,0,7.5
+128,Mohit Sharma,Mohit Sharma,Gujarat Titans,GT,BOWLER,0,7.5
+129,Shahrukh Khan,Shahrukh Khan,Punjab Kings,PBKS,BATSMAN,0,7.5
+130,Ayush Badoni,Ayush Badoni,Lucknow Super Giants,LSG,BATSMAN,0,7.5
+131,Kyle Jamieson,Kyle Jamieson,Chennai Super Kings,CSK,BOWLER,1,7.5
+132,Navdeep Saini,Navdeep Saini,Rajasthan Royals,RR,BOWLER,0,7.5
+133,Kuldeep Sen,Kuldeep Sen,Rajasthan Royals,RR,BOWLER,0,7.5
+134,Dwaine Pretorius,Dwaine Pretorius,Chennai Super Kings,CSK,ALL ROUNDER,1,7.5
+135,Sarfaraz Khan,Sarfaraz Khan,Delhi Capitals,DC,BATSMAN,0,7.5
+136,Sai Kishore,Sai Kishore,Gujarat Titans,GT,BOWLER,0,7.5
+137,Odean Smith,Odean Smith,Gujarat Titans,GT,BOWLER,1,7.5
+138,Mitchell Santner,Mitchell Santner,Chennai Super Kings,CSK,ALL ROUNDER,1,7.5
+139,Philip Salt,Philip Salt,Delhi Capitals,DC,WICKET KEEPER,1,7.5
+140,Yash Dayal,Yash Dayal,Gujarat Titans,GT,BOWLER,0,7.5
+141,Shivam Dube,Shivam Dube,Chennai Super Kings,CSK,ALL ROUNDER,0,7.5
+142,Mukesh Choudhary,Mukesh Choudhary,Chennai Super Kings,CSK,BOWLER,0,7.5
+143,Donovan Ferreira,Donovan Ferreira,Rajasthan Royals,RR,ALL ROUNDER,1,7
+144,Samarth Vyas,Samarth Vyas,Sunrisers Hyderabad,SRH,BATSMAN,0,7
+145,Anmolpreet Singh,Anmolpreet Singh,Sunrisers Hyderabad,SRH,BATSMAN,0,7
+146,Suyash Prabhudessai,Suyash Prabhudessai,Royal Challengers Bangalore,RCB,BATSMAN,0,7
+147,KM Asif,KM Asif,Rajasthan Royals,RR,BOWLER,0,7
+148,Karn Sharma,Karn Sharma,Royal Challengers Bangalore,RCB,BOWLER,0,7
+149,Noor Ahmad,Noor Ahmad,Gujarat Titans,GT,BOWLER,1,7
+150,Kamlesh Nagarkoti,Kamlesh Nagarkoti,Delhi Capitals,DC,BOWLER,0,7
+151,Mayank Markande,Mayank Markande,Sunrisers Hyderabad,SRH,BOWLER,0,7
+152,Siddarth Kaul,Siddarth Kaul,Royal Challengers Bangalore,RCB,BOWLER,0,7
+153,Mahipal Lomror,Mahipal Lomror,Royal Challengers Bangalore,RCB,ALL ROUNDER,0,7
+154,Narayan Jagadeesan,Narayan Jagadeesan,Kolkata Knight Riders,KKR,WICKET KEEPER,0,7
+155,Mukesh Kumar,Mukesh Kumar,Delhi Capitals,DC,BOWLER,0,7
+156,Piyush Chawla,Piyush Chawla,Mumbai Indians,MI,BOWLER,0,7
+157,Reece Topley,Reece Topley,Royal Challengers Bangalore,RCB,BOWLER,1,7
+158,Mandeep Singh,Mandeep Singh,Kolkata Knight Riders,KKR,BATSMAN,0,7
+159,Rishi Dhawan,Rishi Dhawan,Punjab Kings,PBKS,ALL ROUNDER,0,7
+160,Vijay Shankar,Vijay Shankar,Gujarat Titans,GT,ALL ROUNDER,0,7
+161,Abhinav Manohar,Abhinav Manohar,Gujarat Titans,GT,BATSMAN,0,7
+162,Nathan Ellis,Nathan Ellis,Punjab Kings,PBKS,BOWLER,1,7
+163,Harpreet Brar,Harpreet Brar,Punjab Kings,PBKS,BOWLER,0,7
+164,Finn Allen,Finn Allen,Royal Challengers Bangalore,RCB,BATSMAN,1,7
+165,Tushar Deshpande,Tushar Deshpande,Chennai Super Kings,CSK,BOWLER,0,7
+166,Shahbaz Ahmed,Shahbaz Ahmed,Royal Challengers Bangalore,RCB,ALL ROUNDER,0,7
+167,Sai Sudharsan,Sai Sudharsan,Gujarat Titans,GT,BATSMAN,0,7
+168,Rinku Singh,Rinku Singh,Kolkata Knight Riders,KKR,BATSMAN,0,7
+169,Litton Das,Litton Das,Kolkata Knight Riders,KKR,WICKET KEEPER,1,7
+170,Prerak Mankad,Prerak Mankad,Lucknow Super Giants,LSG,ALL ROUNDER,0,6.5
+171,Swapnil Singh,Swapnil Singh,Lucknow Super Giants,LSG,ALL ROUNDER,0,6.5
+172,Anukul Roy,Anukul Roy,Kolkata Knight Riders,KKR,ALL ROUNDER,0,6.5
+173,Dhruv Jurel,Dhruv Jurel,Rajasthan Royals,RR,WICKET KEEPER,0,6.5
+174,Ramandeep Singh,Ramandeep Singh,Mumbai Indians,MI,ALL ROUNDER,0,6.5
+175,Karan Sharma,Karan Sharma,Lucknow Super Giants,LSG,ALL ROUNDER,0,6.5
+176,Prabhsimran Singh,Prabhsimran Singh,Punjab Kings,PBKS,BATSMAN,0,6.5
+177,KC Cariappa,KC Cariappa,Rajasthan Royals,RR,BOWLER,0,6.5
+178,Duan Jansen,Duan Jansen,Mumbai Indians,MI,BOWLER,1,6.5
+179,Urvil Patel,Urvil Patel,Gujarat Titans,GT,WICKET KEEPER,0,6.5
+180,Manan Vohra,Manan Vohra,Lucknow Super Giants,LSG,BATSMAN,0,6.5
+181,Hrithik Shokeen,Hrithik Shokeen,Mumbai Indians,MI,BOWLER,0,6.5
+182,Pradeep Sangwan,Pradeep Sangwan,Gujarat Titans,GT,BOWLER,0,6.5
+183,Akash Deep,Akash Deep,Royal Challengers Bangalore,RCB,BOWLER,0,6.5
+184,Simarjeet Singh,Simarjeet Singh,Chennai Super Kings,CSK,BOWLER,0,6.5
+185,Abdul Samad,Abdul Samad,Sunrisers Hyderabad,SRH,BATSMAN,0,6.5
+186,Jitesh Sharma,Jitesh Sharma,Punjab Kings,PBKS,WICKET KEEPER,0,6.5
+187,Kartik Tyagi,Kartik Tyagi,Sunrisers Hyderabad,SRH,BOWLER,0,6.5
+188,Akash Vasisht,Akash Vasisht,Rajasthan Royals,RR,ALL ROUNDER,0,6
+189,Vivrant Sharma,Vivrant Sharma,Sunrisers Hyderabad,SRH,ALL ROUNDER,0,6
+190,Shams Mulani,Shams Mulani,Mumbai Indians,MI,ALL ROUNDER,0,6
+191,Nishant Sindhu,Nishant Sindhu,Chennai Super Kings,CSK,ALL ROUNDER,0,6
+192,Raj Bawa,Raj Bawa,Punjab Kings,PBKS,ALL ROUNDER,0,6
+193,Sonu Yadav,Sonu Yadav,Royal Challengers Bangalore,RCB,BOWLER,0,6
+194,Mayank Dagar,Mayank Dagar,Sunrisers Hyderabad,SRH,BOWLER,0,6
+195,Mayank Yadav,Mayank Yadav,Lucknow Super Giants,LSG,BOWLER,0,6
+196,Harshit Rana,Harshit Rana,Kolkata Knight Riders,KKR,ALL ROUNDER,0,6
+197,Yash Thakur,Yash Thakur,Lucknow Super Giants,LSG,BOWLER,0,6
+198,Vishnu Vinod,Vishnu Vinod,Mumbai Indians,MI,WICKET KEEPER,0,6
+199,Shivam Singh,Shivam Singh,Punjab Kings,PBKS,BATSMAN,0,6
+200,Harpreet Singh,Harpreet Singh,Punjab Kings,PBKS,BATSMAN,0,6
+201,Subhranshu Senapati,Subhranshu Senapati,Chennai Super Kings,CSK,BATSMAN,0,6
+202,Darshan Nalkande,Darshan Nalkande,Gujarat Titans,GT,BOWLER,0,6
+203,Matheesha Pathirana,Matheesha Pathirana,Chennai Super Kings,CSK,BOWLER,1,6
+204,Yash Dhull,Yash Dhull,Delhi Capitals,DC,BATSMAN,0,6
+205,Kuldip Yadav,Kuldip Yadav,Rajasthan Royals,RR,BOWLER,0,6
+206,Sanvir Singh,Sanvir Singh,Sunrisers Hyderabad,SRH,ALL ROUNDER,0,5.5
+207,Nitish Kumar Reddy,Nitish Kumar Reddy,Sunrisers Hyderabad,SRH,ALL ROUNDER,0,5.5
+208,Mohit Rathee,Mohit Rathee,Punjab Kings,PBKS,ALL ROUNDER,0,5.5
+209,Vicky Ostwal,Vicky Ostwal,Delhi Capitals,DC,BOWLER,0,5.5
+210,Kulwant Khejroliya,Kulwant Khejroliya,Kolkata Knight Riders,KKR,BOWLER,0,5.5
+211,Akash Madhwal,Akash Madhwal,Mumbai Indians,MI,BOWLER,0,5.5
+212,Pravin Dubey,Pravin Dubey,Delhi Capitals,DC,BOWLER,0,5.5
+213,Kunal Singh Rathore,Kunal Singh Rathore,Rajasthan Royals,RR,WICKET KEEPER,0,5.5
+214,Upendra Yadav,Upendra Yadav,Sunrisers Hyderabad,SRH,WICKET KEEPER,0,5.5
+215,Atharva Taide,Atharva Taide,Punjab Kings,PBKS,BATSMAN,0,5.5
+216,Rajvardhan Hangargekar,Rajvardhan Hangargekar,Chennai Super Kings,CSK,BOWLER,0,5.5
+217,Abdul Basith,Abdul Basith,Rajasthan Royals,RR,ALL ROUNDER,0,5
+218,Manoj Bhandage,Manoj Bhandage,Royal Challengers Bangalore,RCB,ALL ROUNDER,0,5
+219,Baltej Singh,Baltej Singh,Punjab Kings,PBKS,BOWLER,0,5
+220,Rajan Kumar,Rajan Kumar,Royal Challengers Bangalore,RCB,BOWLER,0,5
+221,Vidwath Kaverappa,Vidwath Kaverappa,Punjab Kings,PBKS,BOWLER,0,5
+222,Himanshu Sharma,Himanshu Sharma,Royal Challengers Bangalore,RCB,BOWLER,0,5
+223,Yudhvir Singh,Yudhvir Singh,Lucknow Super Giants,LSG,BOWLER,0,5
+224,Bhagath Varma,Bhagath Varma,Chennai Super Kings,CSK,BOWLER,0,5
+225,Nehal Wadhera,Nehal Wadhera,Mumbai Indians,MI,BATSMAN,0,5
+226,Vaibhav Arora,Vaibhav Arora,Kolkata Knight Riders,KKR,BOWLER,0,5
+227,Ripal Patel,Ripal Patel,Delhi Capitals,DC,BATSMAN,0,5
+228,Arjun Tendulkar,Arjun Tendulkar,Mumbai Indians,MI,ALL ROUNDER,0,5
+229,Shaik Rasheed,Shaik Rasheed,Chennai Super Kings,CSK,BATSMAN,0,5
+230,Arshad Khan,Arshad Khan,Mumbai Indians,MI,BOWLER,0,5
+231,Anuj Rawat,Anuj Rawat,Royal Challengers Bangalore,RCB,WICKET KEEPER,0,5
+232,Raghav Goyal,Raghav Goyal,Mumbai Indians,MI,ALL ROUNDER,0,4.5
+233,Ajay Mandal,Ajay Mandal,Chennai Super Kings,CSK,ALL ROUNDER,0,4.5
+234,Suyash Sharma,Suyash Sharma,Kolkata Knight Riders,KKR,BOWLER,0,4.5
+235,Aman Khan,Aman Khan,Delhi Capitals,DC,BOWLER,0,4.5
+236,Avinash Singh,Avinash Singh,Royal Challengers Bangalore,RCB,BOWLER,0,4.5
+237,Prashant Solanki,Prashant Solanki,Chennai Super Kings,CSK,BOWLER,0,4.5
