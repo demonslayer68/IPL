@@ -13991,38 +13991,14 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span> <span class="s1">&#39;fixtures.json&#39;</span> <span class="p">)[</span> <span class="s1">&#39;Data&#39;</span> <span class="p">]</span><span class="o">.</span><span class="n">Value</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fixtures</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">json_normalize</span><span class="p">(</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span> <span class="s1">&#39;fixtures.json&#39;</span> <span class="p">)[</span> <span class="s1">&#39;Data&#39;</span> <span class="p">]</span><span class="o">.</span><span class="n">Value</span> <span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fixtures</span> <span class="o">=</span> <span class="n">fixtures</span><span class="p">[[</span> <span class="s1">&#39;MatchId&#39;</span><span class="p">,</span> <span class="s1">&#39;HomeTeamShortName&#39;</span><span class="p">,</span> <span class="s1">&#39;AwayTeamShortName&#39;</span> <span class="p">]]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># read and format fixtures data</span>
+<span class="c1"># got fixtures json from the webpage</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span> <span class="s1">&#39;fixtures.json&#39;</span> <span class="p">)[</span> <span class="s1">&#39;Data&#39;</span> <span class="p">]</span><span class="o">.</span><span class="n">Value</span>
+<span class="n">fixtures</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">json_normalize</span><span class="p">(</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span> <span class="s1">&#39;fixtures.json&#39;</span> <span class="p">)[</span> <span class="s1">&#39;Data&#39;</span> <span class="p">]</span><span class="o">.</span><span class="n">Value</span> <span class="p">)</span>
+<span class="n">fixtures</span> <span class="o">=</span> <span class="n">fixtures</span><span class="p">[[</span> <span class="s1">&#39;MatchId&#39;</span><span class="p">,</span> <span class="s1">&#39;HomeTeamShortName&#39;</span><span class="p">,</span> <span class="s1">&#39;AwayTeamShortName&#39;</span> <span class="p">]]</span>
 </pre></div>
 
      </div>
@@ -14036,7 +14012,8 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fixtures</span><span class="p">[</span><span class="s1">&#39;HomeNextMatch&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># default values for nextmatch</span>
+<span class="n">fixtures</span><span class="p">[</span><span class="s1">&#39;HomeNextMatch&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">fixtures</span><span class="p">[</span><span class="s1">&#39;AwayNextMatch&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
 </pre></div>
 
@@ -14051,7 +14028,8 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">fixtures</span><span class="p">)):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># populate next match</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">fixtures</span><span class="p">)):</span>
     <span class="k">for</span> <span class="n">team</span> <span class="ow">in</span> <span class="p">[</span> <span class="n">fixtures</span><span class="p">[</span><span class="s1">&#39;HomeTeamShortName&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">],</span> <span class="n">fixtures</span><span class="p">[</span><span class="s1">&#39;AwayTeamShortName&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="p">]:</span>
         <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">fixtures</span><span class="p">)):</span>
             <span class="k">if</span> <span class="n">team</span> <span class="o">==</span> <span class="n">fixtures</span><span class="p">[</span><span class="s1">&#39;HomeTeamShortName&#39;</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="ow">or</span> <span class="n">team</span> <span class="o">==</span> <span class="n">fixtures</span><span class="p">[</span><span class="s1">&#39;AwayTeamShortName&#39;</span><span class="p">][</span><span class="n">j</span><span class="p">]:</span>
@@ -14067,19 +14045,40 @@ a.anchor-link {
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_rows&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># pd options to see full data</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_rows&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_columns&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.width&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_colwidth&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
  
-<span class="c1"># All dataframes hereafter reflect these changes.</span>
-<span class="n">display</span><span class="p">(</span><span class="n">fixtures</span><span class="p">)</span>
+<span class="c1">#display(fixtures)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get distribution of next match distance</span>
+
+<span class="n">NextArray</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">fixtures</span><span class="p">[</span><span class="s1">&#39;AwayNextMatch&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span> <span class="n">fixtures</span><span class="p">[</span><span class="s1">&#39;HomeNextMatch&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;total number of matches * 2:&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">NextArray</span><span class="p">))</span>
+<span class="n">count</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">NextArray</span><span class="p">)</span>
+<span class="n">count</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+<span class="n">count</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">count</span><span class="o">.</span><span class="n">items</span><span class="p">()))</span>
+<span class="n">count</span>
 </pre></div>
 
      </div>
@@ -14098,727 +14097,16 @@ a.anchor-link {
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>MatchId</th>
-      <th>HomeTeamShortName</th>
-      <th>AwayTeamShortName</th>
-      <th>HomeNextMatch</th>
-      <th>AwayNextMatch</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>219154</td>
-      <td>GT</td>
-      <td>CSK</td>
-      <td>6</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>219155</td>
-      <td>PBKS</td>
-      <td>KKR</td>
-      <td>6</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>219156</td>
-      <td>LSG</td>
-      <td>DC</td>
-      <td>3</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>219157</td>
-      <td>SRH</td>
-      <td>RR</td>
-      <td>6</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>219158</td>
-      <td>RCB</td>
-      <td>MI</td>
-      <td>4</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>222174</td>
-      <td>CSK</td>
-      <td>LSG</td>
-      <td>6</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>222176</td>
-      <td>DC</td>
-      <td>GT</td>
-      <td>4</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>222177</td>
-      <td>RR</td>
-      <td>PBKS</td>
-      <td>3</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>222178</td>
-      <td>KKR</td>
-      <td>RCB</td>
-      <td>4</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>222180</td>
-      <td>LSG</td>
-      <td>SRH</td>
-      <td>5</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>222182</td>
-      <td>RR</td>
-      <td>DC</td>
-      <td>6</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>222183</td>
-      <td>MI</td>
-      <td>CSK</td>
-      <td>4</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>222185</td>
-      <td>GT</td>
-      <td>KKR</td>
-      <td>5</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>222186</td>
-      <td>SRH</td>
-      <td>PBKS</td>
-      <td>5</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>222187</td>
-      <td>RCB</td>
-      <td>LSG</td>
-      <td>5</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>222188</td>
-      <td>DC</td>
-      <td>MI</td>
-      <td>4</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>222189</td>
-      <td>CSK</td>
-      <td>RR</td>
-      <td>7</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>222190</td>
-      <td>PBKS</td>
-      <td>GT</td>
-      <td>3</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>222191</td>
-      <td>KKR</td>
-      <td>SRH</td>
-      <td>3</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>222192</td>
-      <td>RCB</td>
-      <td>DC</td>
-      <td>4</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>222193</td>
-      <td>LSG</td>
-      <td>PBKS</td>
-      <td>5</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>222194</td>
-      <td>MI</td>
-      <td>KKR</td>
-      <td>3</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>222195</td>
-      <td>GT</td>
-      <td>RR</td>
-      <td>7</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>222196</td>
-      <td>RCB</td>
-      <td>CSK</td>
-      <td>3</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>222197</td>
-      <td>SRH</td>
-      <td>MI</td>
-      <td>4</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>222198</td>
-      <td>RR</td>
-      <td>LSG</td>
-      <td>6</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>222199</td>
-      <td>PBKS</td>
-      <td>RCB</td>
-      <td>4</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>222200</td>
-      <td>DC</td>
-      <td>KKR</td>
-      <td>6</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>222201</td>
-      <td>CSK</td>
-      <td>SRH</td>
-      <td>4</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>222202</td>
-      <td>LSG</td>
-      <td>GT</td>
-      <td>8</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>30</th>
-      <td>222203</td>
-      <td>MI</td>
-      <td>PBKS</td>
-      <td>4</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>31</th>
-      <td>222204</td>
-      <td>RCB</td>
-      <td>RR</td>
-      <td>4</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>32</th>
-      <td>222205</td>
-      <td>KKR</td>
-      <td>CSK</td>
-      <td>3</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>33</th>
-      <td>222206</td>
-      <td>SRH</td>
-      <td>DC</td>
-      <td>6</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>34</th>
-      <td>222207</td>
-      <td>GT</td>
-      <td>MI</td>
-      <td>4</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>35</th>
-      <td>222208</td>
-      <td>RCB</td>
-      <td>KKR</td>
-      <td>7</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>36</th>
-      <td>222209</td>
-      <td>RR</td>
-      <td>CSK</td>
-      <td>5</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>37</th>
-      <td>222210</td>
-      <td>PBKS</td>
-      <td>LSG</td>
-      <td>3</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>38</th>
-      <td>222211</td>
-      <td>KKR</td>
-      <td>GT</td>
-      <td>8</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>39</th>
-      <td>222212</td>
-      <td>DC</td>
-      <td>SRH</td>
-      <td>4</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>40</th>
-      <td>222213</td>
-      <td>CSK</td>
-      <td>PBKS</td>
-      <td>5</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>41</th>
-      <td>222214</td>
-      <td>MI</td>
-      <td>RR</td>
-      <td>3</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>42</th>
-      <td>222215</td>
-      <td>LSG</td>
-      <td>RCB</td>
-      <td>3</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>43</th>
-      <td>222216</td>
-      <td>GT</td>
-      <td>DC</td>
-      <td>4</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>44</th>
-      <td>222217</td>
-      <td>PBKS</td>
-      <td>MI</td>
-      <td>8</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>45</th>
-      <td>222218</td>
-      <td>LSG</td>
-      <td>CSK</td>
-      <td>5</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>46</th>
-      <td>222219</td>
-      <td>SRH</td>
-      <td>KKR</td>
-      <td>5</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>47</th>
-      <td>222220</td>
-      <td>RR</td>
-      <td>GT</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>48</th>
-      <td>222221</td>
-      <td>CSK</td>
-      <td>MI</td>
-      <td>6</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>49</th>
-      <td>222222</td>
-      <td>DC</td>
-      <td>RCB</td>
-      <td>5</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>50</th>
-      <td>222223</td>
-      <td>GT</td>
-      <td>LSG</td>
-      <td>6</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>51</th>
-      <td>222224</td>
-      <td>RR</td>
-      <td>SRH</td>
-      <td>4</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>52</th>
-      <td>222225</td>
-      <td>KKR</td>
-      <td>PBKS</td>
-      <td>3</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>53</th>
-      <td>222226</td>
-      <td>MI</td>
-      <td>RCB</td>
-      <td>3</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>54</th>
-      <td>222227</td>
-      <td>CSK</td>
-      <td>DC</td>
-      <td>6</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>55</th>
-      <td>222228</td>
-      <td>KKR</td>
-      <td>RR</td>
-      <td>5</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>56</th>
-      <td>222229</td>
-      <td>MI</td>
-      <td>GT</td>
-      <td>6</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>57</th>
-      <td>222230</td>
-      <td>SRH</td>
-      <td>LSG</td>
-      <td>4</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>58</th>
-      <td>222231</td>
-      <td>DC</td>
-      <td>PBKS</td>
-      <td>5</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>59</th>
-      <td>222232</td>
-      <td>RR</td>
-      <td>RCB</td>
-      <td>6</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>60</th>
-      <td>222233</td>
-      <td>CSK</td>
-      <td>KKR</td>
-      <td>6</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>61</th>
-      <td>222234</td>
-      <td>GT</td>
-      <td>SRH</td>
-      <td>8</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>62</th>
-      <td>222235</td>
-      <td>LSG</td>
-      <td>MI</td>
-      <td>5</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>63</th>
-      <td>222236</td>
-      <td>PBKS</td>
-      <td>DC</td>
-      <td>2</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>64</th>
-      <td>222237</td>
-      <td>SRH</td>
-      <td>RCB</td>
-      <td>4</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>65</th>
-      <td>222238</td>
-      <td>PBKS</td>
-      <td>RR</td>
-      <td>10</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>66</th>
-      <td>222239</td>
-      <td>DC</td>
-      <td>CSK</td>
-      <td>10</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>67</th>
-      <td>222240</td>
-      <td>KKR</td>
-      <td>LSG</td>
-      <td>10</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>68</th>
-      <td>222241</td>
-      <td>MI</td>
-      <td>SRH</td>
-      <td>10</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>69</th>
-      <td>222242</td>
-      <td>RCB</td>
-      <td>GT</td>
-      <td>10</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>70</th>
-      <td>222243</td>
-      <td>TBC</td>
-      <td>TBC</td>
-      <td>1</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>71</th>
-      <td>222244</td>
-      <td>TBC</td>
-      <td>TBC</td>
-      <td>1</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>72</th>
-      <td>222245</td>
-      <td>TBC</td>
-      <td>TBC</td>
-      <td>1</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>73</th>
-      <td>222246</td>
-      <td>TBC</td>
-      <td>TBC</td>
-      <td>10</td>
-      <td>10</td>
-    </tr>
-  </tbody>
-</table>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>total number of matches * 2: 148
+</pre>
 </div>
 </div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">NextArray</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">fixtures</span><span class="p">[</span><span class="s1">&#39;AwayNextMatch&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span> <span class="n">fixtures</span><span class="p">[</span><span class="s1">&#39;HomeNextMatch&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span> <span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">NextArray</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
 
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>148</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">count</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">NextArray</span><span class="p">)</span>
-<span class="n">count</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">count</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">count</span><span class="o">.</span><span class="n">items</span><span class="p">()))</span>
-<span class="n">count</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 
 
 
@@ -14844,10 +14132,26 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">transfers</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">1</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span> <span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">7</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">8</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">10</span> <span class="p">:</span> <span class="mi">0</span> <span class="p">}</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># map of number of transfers for each next match distance</span>
+<span class="c1"># 1 and 10 are bogus so putting 0</span>
+<span class="n">transfers</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">1</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span> <span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">7</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">8</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">10</span> <span class="p">:</span> <span class="mi">0</span> <span class="p">}</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># populate populate transfers by match</span>
 <span class="n">home_transfers</span> <span class="o">=</span> <span class="p">[</span> <span class="n">transfers</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">fixtures</span><span class="p">[</span><span class="s1">&#39;HomeNextMatch&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span> <span class="p">]</span>
 <span class="n">away_transfers</span> <span class="o">=</span> <span class="p">[</span> <span class="n">transfers</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">fixtures</span><span class="p">[</span><span class="s1">&#39;AwayNextMatch&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span> <span class="p">]</span>
 <span class="n">fixtures</span><span class="p">[</span> <span class="s1">&#39;HomeTransfers&#39;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">home_transfers</span>
@@ -14863,10 +14167,10 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fixtures</span><span class="p">[</span><span class="s1">&#39;TotalTransfers&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;number of proposed transfers: &#39;</span><span class="p">,</span> <span class="n">fixtures</span><span class="p">[</span><span class="s1">&#39;TotalTransfers&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14882,25 +14186,37 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>138</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>number of proposed transfers:  138
+</pre>
+</div>
 </div>
 
 </div>
 
 </div>
 
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fixtures</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;proposed_transfers.csv&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fixtures</span>
@@ -14919,7 +14235,7 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
 
 
 
@@ -15770,131 +15086,6 @@ a.anchor-link {
   </tbody>
 </table>
 </div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">3</span> <span class="o">*</span> <span class="mi">0</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">18</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">31</span> <span class="o">*</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">31</span> <span class="o">*</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">33</span> <span class="o">*</span> <span class="mi">0</span> <span class="o">+</span> <span class="mi">11</span> <span class="o">*</span> <span class="mi">0</span> <span class="o">+</span> <span class="mi">5</span> <span class="o">*</span> <span class="mi">0</span> <span class="o">+</span> <span class="mi">15</span> <span class="o">*</span> <span class="mi">0</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>119</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">sum</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">count</span><span class="o">.</span><span class="n">values</span><span class="p">()))</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>148</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">31</span> <span class="o">*</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">11</span> <span class="o">*</span> <span class="mi">0</span> <span class="o">+</span> <span class="mi">31</span> <span class="o">*</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">33</span> <span class="o">*</span> <span class="mi">0</span> <span class="o">+</span> <span class="mi">5</span> <span class="o">*</span> <span class="mi">0</span> <span class="o">+</span> <span class="mi">18</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">*</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">10</span> <span class="o">*</span> <span class="mi">0</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>121</pre>
 </div>
 
 </div>
